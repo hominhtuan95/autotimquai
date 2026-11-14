@@ -1,0 +1,33 @@
+AUTO TRAIN MIL VÀ CỔ MỘ — 1 NHÂN VẬT, LÙA QUÁI 8 ĐIỂM
+====================================================
+Windows 11, Python 3.11+, KHÔNG cần mã kích hoạt.
+
+CHẠY BẰNG PYTHON
+1. Cài Python 3.11+ trên Windows.
+2. Mở terminal tại thư mục có Auto_Train_1NV.py.
+3. Chạy: pip install -r requirements.txt
+4. Chạy: python Auto_Train_1NV.py
+
+BUILD EXE QUA GITHUB
+1. Tải toàn bộ nội dung thư mục Auto_Train_1NV_Test lên gốc repository (gồm .github).
+2. Mở Actions > Build Auto Train 1NV EXE > Run workflow.
+3. Tải EXE trong mục Artifacts khi workflow hoàn thành.
+
+CƠ CHẾ LÙA QUÁI
+- Chọn cửa sổ game và tích "Bật lùa quái" rồi nhấn BẬT AUTO.
+- Chọn ngẫu nhiên 1 trong 20 chuỗi định nghĩa trong mã nguồn.
+- Mỗi chữ A-H là 1 click vào điểm tương ứng, cách nhau 2 giây.
+- Sau khi click xong chuỗi, dừng click di chuyển trong 10 giây để đánh.
+- Sau 10 giây, chọn ngẫu nhiên chuỗi tiếp theo và lặp lại.
+- Ví dụ: BB DD CC AA = B,B,D,D,C,C,A,A (8 lần click).
+- Tọa độ A-H tính theo tỷ lệ cửa sổ game, tham chiếu ảnh 864x648.
+- Không cần hiệu chỉnh thanh máu; không tự nhận biết quái hay quay về tọa độ bản đồ.
+- Tab 3,5 giây; Space 0,1 giây (không hiển thị thời gian); Skill 1–7;
+  Bay chỗ khác (8) mặc định 180 giây; Bơm Máu (9); Bơm Mana (0).
+- Các chức năng phím chạy theo thời gian cài đặt, kể cả trong lúc di chuyển.
+
+LƯU Ý
+- Phần mềm gửi phím/chuột bằng PostMessage; một số game không nhận khi chạy nền.
+- Nhấp vào điểm B/H/D gần giao diện game có thể gây nhấp nhầm khi cửa sổ thay đổi.
+- Click vào vật cản hoặc quái có thể không tạo ra chuyển động mong muốn.
+- Chưa kiểm thử trên Windows/game thực tế. Thử ở bãi an toàn, theo dõi nhân vật.
